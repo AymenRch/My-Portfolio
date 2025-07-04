@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Project from "./routes/Project";
+import ServicesPage from "./routes/ServicesPage";
 import Contact from "./routes/Contact";
+import Project from "./components/projects.js";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div id="project">
         <Project />
+      </div>
+      <div id="services">
+        <ServicesPage />
       </div>
       <div id="contact">
         <Contact />

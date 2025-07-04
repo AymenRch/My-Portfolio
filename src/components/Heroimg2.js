@@ -64,14 +64,14 @@ const Heroimg2 = () => {
     <div className="hero2">
       <div className="mask2">
       </div>
-
-      {/* Other Content */}
-      <div className="content">
+      <div className="right" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+         {/* Other Content */}
+      <div className="content" style={{paddingRight:"220px",marginLeft:"30px"}}>
         <h1>
           <FaBook size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
           Education
         </h1>
-        <p>L3 Informatique - Systèmes d'Information.</p>
+        <p>Computer Science Bachelor.</p>
         <p>21st Century Soft Skills Certification.</p>
         <p>AWS Data Analyst Certification.</p>
       </div>
@@ -88,6 +88,8 @@ const Heroimg2 = () => {
         </p>
         <p><strong>Active in Coding Communities :</strong> <br></br>Regularly Participate in Online Coding Challenges.</p>
       </div>
+      </div>
+     
 
       {/* Content 3 (Skill Bars with Animation) */}
       <div className="content3" ref={sectionRef}>

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "../components/Navbar";
 import Services from '../components/Services';
 
-const Project = () => {
+const ServicesPage = () => {
   return (
     <div>
       <Navbar/>
@@ -11,4 +11,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default ServicesPage
