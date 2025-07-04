@@ -17,7 +17,7 @@ const data = [
         name: 'Portfolio',
         description: 'My Personal Portfolio',
         image: PORTFOLIO,
-        url: 'https://aymensportfolio.netlify.app/',
+        url: 'https://aymenrch.github.io/My-Portfolio/',
         tech: ['React']
     },
 
