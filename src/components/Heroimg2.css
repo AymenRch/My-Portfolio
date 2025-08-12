@@ -195,17 +195,18 @@
 
     .hero2 .content {
         top: 15%;
-        left: 50%;
+        left: 43%;
+        width: 80%;
     }
 
     .hero2 .content2 {
         left: 50%;
-        top: 46%;
+        top: 40%;
     }
 
     .hero2 .content3 {
         left: 50%;
-        top: 80%;
+        top: 65%;
     }
 
     .mask2 {
@@ -217,6 +218,7 @@
         padding-left: 33px;
         /* Adds space for the circle */
         margin-left: 30px;
+        width: 100%;
     }
 
     .hero2 .content3,
@@ -225,4 +227,5 @@
         box-shadow: none;
         border: 0.1px solid white;
     }
+    
 }
