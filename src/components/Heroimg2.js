@@ -10,7 +10,7 @@ const Heroimg2 = () => {
     react: 0,
     php: 0,
     ExpressJs: 0,
-    Java: 0,
+    Laravel: 0,
     Flutter: 0,
   });
 
@@ -27,8 +27,8 @@ const Heroimg2 = () => {
             javascript: 80,
             react: 70,
             php: 90,
-            ExpressJs: 70,
-            Java: 70,
+            ExpressJs: 90,
+            Laravel: 70,
             Flutter: 90,
           });
         } else {
