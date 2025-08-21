@@ -21,7 +21,6 @@ const Heroimg2 = () => {
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          // Trigger the animation
           setProgress({
             HTML: 100,
             CSS: 80,
@@ -33,7 +32,6 @@ const Heroimg2 = () => {
             Flutter: 90,
           });
         } else {
-          // Reset progress when leaving the viewport
           setProgress({
             HTML: 0,
             CSS: 0,
@@ -46,7 +44,7 @@ const Heroimg2 = () => {
           });
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -62,112 +60,59 @@ const Heroimg2 = () => {
 
   return (
     <div className="hero2">
-      <div className="mask2">
-      </div>
-      <div className="right" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-         {/* Other Content */}
-      <div className="content" style={{paddingRight:"220px",marginLeft:"30px"}}>
-        <h1>
-          <FaBook size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
-          Education
-        </h1>
-        <p>Computer Science Bachelor.</p>
-        <p>21st Century Soft Skills Certification.</p>
-        <p>AWS Data Analyst Certification.</p>
+      <div className="mask2"></div>
+
+      {/* RIGHT SIDE */}
+      <div
+        className="right"
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <div className="content" style={{ paddingRight: "220px", marginLeft: "30px" }}>
+          <h1>
+            <FaBook size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
+            Education
+          </h1>
+          <p>Computer Science Bachelor.</p>
+          <p>21st Century Soft Skills Certification.</p>
+          <p>AWS Data Analyst Certification.</p>
+        </div>
+
+        <div className="content2">
+          <h1>
+            <FaBook size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
+            Experience
+          </h1>
+          <p>
+            <strong>One Year of Freelance :</strong> <br />
+            Developed Custom Web & Mobile Apps For Clients.
+          </p>
+          <p>
+            <strong>QA tester at Createk Solution :</strong> <br />
+            Software Unit Testing & Pentesting.
+          </p>
+          <p>
+            <strong>Active in Coding Communities :</strong> <br />
+            Regularly Participate in Online Coding Challenges.
+          </p>
+        </div>
       </div>
 
-      <div className="content2">
-        <h1>
-          <FaBook size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
-          Experience
-        </h1>
-        <p><strong>One Year of Freelance :</strong> <br></br> 
-        Developed Custom Web & Mobile Fpps For Clients.</p>
-        <p><strong>Various School Projects :</strong> <br></br>
-        Three Years Of System Designing And Developing.
-        </p>
-        <p><strong>Active in Coding Communities :</strong> <br></br>Regularly Participate in Online Coding Challenges.</p>
-      </div>
-      </div>
-     
+      {/* LEFT SIDE */}
+      <div className="left">
+        <div className="content3" ref={sectionRef}>
+          <h1>
+            <FaCode size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
+            Skills
+          </h1>
 
-      {/* Content 3 (Skill Bars with Animation) */}
-      <div className="content3" ref={sectionRef}>
-        <h1>
-          <FaCode size={50} style={{ color: "#0ef", paddingRight: "1rem" }} />
-          Skills
-        </h1>
-        <div className="skill-bar">
-          <p>HTML</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.HTML}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>CSS</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.CSS}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>JavaScript</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.javascript}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>React</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.react}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>PHP</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.php}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>ExpressJs</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.ExpressJs}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>Java</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.Java}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="skill-bar">
-          <p>Flutter</p>
-          <div className="bar">
-            <div
-              className="progress"
-              style={{ width: `${progress.Flutter}%` }}
-            ></div>
-          </div>
+          {Object.keys(progress).map((skill) => (
+            <div className="skill-bar" key={skill}>
+              <p>{skill}</p>
+              <div className="bar">
+                <div className="progress" style={{ width: `${progress[skill]}%` }}></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
