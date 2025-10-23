@@ -1,0 +1,231 @@
+.mask2 {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
+.mask2::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.hero2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.hero2 .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    padding-right: 100px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    /* White shadow */
+    background-color: rgba(19, 19, 19, 0.8);
+
+
+}
+
+.hero2 .content:hover,
+.hero2 .content2:hover,
+.hero2 .content3:hover {
+    transform: translate(-50%, -55%);
+}
+
+.hero2 .content h1,
+.hero2 .content2 h1,
+.hero2 .content3 h1 {
+    font-size: 2rem;
+    padding: 0.6rem 0 1.5rem;
+    display: flex;
+    /* Align the icon and text in a row */
+    align-items: center;
+    /* Vertically center the icon and text */
+}
+
+.hero2 .content p,
+.hero2 .content2 p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 10px 0;
+    /* Adds space between paragraphs */
+    position: relative;
+    /* Required for positioning the dot */
+    padding-left: 25px;
+    /* Adds space for the circle */
+    margin-left: 30px;
+    text-align: left;
+}
+
+.hero2 .content3 p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 10px 0;
+    /* Adds space between paragraphs */
+    position: relative;
+    /* Required for positioning the dot */
+    padding-left: 0px;
+    /* Adds space for the circle */
+    margin-left: 0px;
+    text-align: left;
+}
+
+.hero2 .content p::before,
+.hero2 .content2 p::before {
+    content: '';
+    /* No text, just a circle */
+    position: absolute;
+    left: 0;
+    /* Position the circle at the left of the paragraph */
+    top: 50%;
+    /* Vertically center the circle */
+    transform: translateY(-50%);
+    /* Adjust vertical alignment */
+    width: 10px;
+    /* Circle size */
+    height: 10px;
+    /* Circle size */
+    border-radius: 50%;
+    /* Makes the dot round */
+    background-color: #0ef;
+    /* Blue color for the dot */
+}
+
+.hero2 .content2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 28%;
+    text-align: center;
+    background-color: rgba(19, 19, 19, 0.8);
+    padding: 20px;
+    padding-right: 100px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    /* White shadow */
+
+
+}
+
+.hero2 .content3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 78%;
+    text-align: center;
+    background-color: rgba(19, 19, 19, 0.8);
+    border: 1px solid #fff;
+   /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5); /* White shadow */
+    padding: 20px;
+    padding-right: 100px;
+    border-radius: 25px;
+    transition: 0.3s;
+    width: 400px;
+}
+
+.skill-bar {
+    margin: 10px 0;
+}
+
+.skill-bar p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bar {
+    position: relative;
+    width: 120%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0ef;
+    border-radius: 10px 0 0 10px;
+    width: 0%;
+    /* Start at 0% */
+    transition: width 2s ease;
+    /* Smooth animation to target width */
+}
+
+@media screen and (max-width:640px) {
+    .hero2 .content h1 {
+        font-size: 3rem;
+    }
+
+    .hero2 .content p {
+        font-size: 1.4rem;
+    }
+
+    .hero2 .content {
+        top: 15%;
+        left: 43%;
+        width: 80%;
+    }
+
+    .hero2 .content2 {
+        left: 50%;
+        top: 40%;
+    }
+
+    .hero2 .content3 {
+        left: 50%;
+        top: 65%;
+    }
+
+    .mask2 {
+        height: 300vh;
+    }
+
+    .hero2 .content p,
+    .hero2 .content2 p {
+        padding-left: 33px;
+        /* Adds space for the circle */
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .hero2 .content3,
+    .hero2 .content2,
+    .hero2 .content {
+        box-shadow: none;
+        border: 0.1px solid white;
+    }
+    
+}

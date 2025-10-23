@@ -1,0 +1,116 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the elements vertically */
+    height: 100vh;
+    text-align: center; /* Center the text */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .contact {
+    color: white; /* Contact text in white */
+  }
+  
+  .me {
+    margin-left: 10px;
+    color: aqua; /* Me text in aqua */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn1 {
+    width: 100%; /* Set button width to 100% */
+    padding: 10px 42px;
+    font-size: 1rem;
+    background-color: #0ef;
+    color: black;
+    border: 1px solid #0ef;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align the content */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .btn1:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+  }
+  
+  .btn1 svg {
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 640px) {
+    .form {
+      height: auto; /* Remove full viewport height for smaller screens */
+      padding: 20px; /* Add some padding */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Reduce font size for smaller screens */
+      margin-bottom: 15px;
+    }
+  
+    .input-group {
+      flex-direction: column; /* Stack inputs vertically on smaller screens */
+      align-items: center;
+      gap: 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"] {
+      width: 100%; /* Make the inputs full width */
+    }
+  
+    .btn1 {
+      width: 100%; /* Keep button full width */
+      padding: 14px 0; /* Adjust button padding */
+      font-size: 1.2rem; /* Increase font size on small screens */
+    }
+  
+    textarea {
+      width: 100%; /* Make textarea full width */
+    }
+  }
+  

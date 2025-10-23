@@ -1,0 +1,138 @@
+/* Default styles for larger screens */
+.hero5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mask5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mask5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.intro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.header5 h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.header5 .highlight {
+  color: #0ef; /* Aqua color for "Services" */
+}
+
+.content5 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 2;
+  width: 90%;
+}
+
+.service5 {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+  max-width: 300px;
+  min-width: 250px;
+  height: 280px; /* Set equal heights for consistency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service5 h2 {
+  margin-bottom: 10px;
+}
+
+.service5 h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service5 p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service5:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 640px) {
+  /* Adjust the header size on small screens */
+  .header5 h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust the positioning of the content5 to avoid overlap */
+  .content5 {
+    flex-direction: column; /* Stack items vertically on small screens */
+    top: 9%; /* Adjust top position to keep content within view */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Ensure the content takes up the full width */
+    gap: 15px; /* Reduced gap between services */
+  }
+
+  /* Make sure services take full width and height adjusts to content */
+  .service5 {
+    flex: 1 1 100%; /* Allow each service to take up full width */
+    max-width: 100%; /* Remove max-width to make the service cards fluid */
+    height: auto; /* Let the height adjust based on content */
+    padding: 5px; /* Reduced padding for mobile */
+  }
+
+  /* Add some padding around the container for better spacing */
+  .hero5 {
+    padding: 20px;
+
+  }
+
+  /* Adjust the Project page layout to make room for all services */
+  .content5 {
+    width: 100%; /* Allow the entire Project page to use available width */
+    flex-wrap: wrap; /* Let services stack properly */
+  }
+  .header5{
+    top: 0%;
+  }
+}
