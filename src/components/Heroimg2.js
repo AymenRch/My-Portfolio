@@ -83,15 +83,19 @@ const Heroimg2 = () => {
             Experience
           </h1>
           <p>
-            <strong>One Year of Freelance :</strong> <br />
+            <strong style={{whiteSpace:"nowrap"}}>One Year of Freelance :</strong> <br />
             Developed Custom Web & Mobile Apps For Clients.
           </p>
           <p>
-            <strong>QA tester at Createk Solution :</strong> <br />
+            <strong style={{whiteSpace:"nowrap"}}>QA tester at Createk Solution :</strong> <br />
             Software Unit Testing & Pentesting.
           </p>
           <p>
-            <strong>Active in Coding Communities :</strong> <br />
+            <strong style={{whiteSpace:"nowrap"}}>Frontend Dev at Createk Solution :</strong> <br />
+            Creating Modern Interactive User Interfaces.
+          </p>
+          <p>
+            <strong style={{whiteSpace:"nowrap"}}>Active in Coding Communities :</strong> <br />
             Regularly Participate in Online Coding Challenges.
           </p>
         </div>

@@ -184,6 +184,7 @@
     /* Smooth animation to target width */
 }
 
+
 @media screen and (max-width:640px) {
     .hero2 .content h1 {
         font-size: 3rem;
@@ -226,6 +227,9 @@
     .hero2 .content {
         box-shadow: none;
         border: 0.1px solid white;
+        width: 90%;
     }
+
+  
     
 }
