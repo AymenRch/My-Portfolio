@@ -30,8 +30,8 @@ const Services = () => {
             <h2>
               <FaInstagram size={40} style={{ color: "#0ef" }} />
             </h2>
-            <h4>Community Management</h4>
-            <p>Enhancing brand presence and engagement on social media platforms.</p>
+            <h4>Automation</h4>
+            <p>Automating tasks to boost efficiency and consistency.</p>
           </div>
         </div>
       </div>

@@ -12,8 +12,7 @@ const Footer = () => {
                 <div className="location">
                     <FaHome size={20} style={{color:"white", marginRight: "2rem"}} />
                     <div>
-                        <p>03 Sidi Achour Annaba.</p>
-                        <p>Algerie.</p>
+                        <p>Annaba, Algeria.</p>
                     </div>
                 </div>
                 <div className="email">
@@ -25,7 +24,7 @@ const Footer = () => {
                 <div className="email">
                     <h4>
                         <FaMailBulk size={20} style={{color:"white", marginRight:"2rem"}}/>
-                        aymenrch37@gmail.com
+                        mohammed-aymen.rachedi@univ-annaba.dz
                     </h4>
                 </div>
             </div>
@@ -34,10 +33,9 @@ const Footer = () => {
                 <h4>About Me</h4>
                 <p>This is me Aymen Rachedi. Full Stack Web & Mobile Developper. I enjoy discussing new projects.</p>
                 <div className="social">
-                <FaFacebook size={30} style={{color:"white", marginRight:"1rem"}}/>
-                <FaInstagram size={30} style={{color:"white", marginRight:"1rem"}}/>
-                <FaLinkedin size={30} style={{color:"white", marginRight:"1rem"}}/>
-
+                <FaFacebook size={30} style={{color:"white", marginRight:"1rem", cursor:"pointer"}} onClick={() => window.open('https://www.facebook.com/cika.gang', '_blank')}/>
+                <FaInstagram size={30} style={{color:"white", marginRight:"1rem", cursor:"pointer"}} onClick={() => window.open('https://www.instagram.com/_aymen_rch__/', '_blank')}/>
+                <FaLinkedin size={30} style={{color:"white", marginRight:"1rem", cursor:"pointer"}} onClick={()=>{window.open('https://www.linkedin.com/in/aymen-rch-49b43a2bb/')}}/>
                 </div>
             </div>
 

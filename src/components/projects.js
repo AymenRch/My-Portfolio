@@ -1,6 +1,8 @@
 import React from 'react';
 import ECOM from '../assets/ecom.png';
 import PORTFOLIO from '../assets/portfolio.png';
+import Delivyou from '../assets/Delivyou.png';
+import Keplox from '../assets/Keplox.png';
 import './ProjectsStyles.css';
 import { FaGithub } from 'react-icons/fa'
 
@@ -12,16 +14,38 @@ const data = [
         image: ECOM,
         url: 'https://aymenrch.github.io/parfumes/',
         tech: ['React', 'Node.js', 'supabase'],
-        github:'https://github.com/AymenRch/parfumes'
+        github:'https://github.com/AymenRch/parfumes',
+        myRole: 'Full-Stack Dev'
     },
     {
         id: 2,
+        name: 'Delivyou',
+        description: 'A Shipping Platform',
+        image: Delivyou,
+        url: 'https://delivyou.com/',
+        tech: ['Laravel', 'MySQL'],
+        github: 'https://github.com/AymenRch',
+        myRole: 'Frontend Dev'
+    },
+    {
+        id: 3,
+        name: 'Keplox',
+        description: 'Business Management Dashboard',
+        image: Keplox,
+        url: 'https://www.keplox.com/login',
+        tech: ['Laravel', 'MySQL'],
+        github: 'https://github.com/AymenRch',
+        myRole: 'Frontend Dev'
+    },
+    {
+        id: 4,
         name: 'Portfolio',
         description: 'My Personal Portfolio',
         image: PORTFOLIO,
         url: 'https://aymenrch.github.io/My-Portfolio/',
         tech: ['React'],
-        github: 'https://github.com/AymenRch/My-Portfolio'
+        github: 'https://github.com/AymenRch/My-Portfolio',
+        myRole: 'Full-Stack Dev'
     },
 
 ];
