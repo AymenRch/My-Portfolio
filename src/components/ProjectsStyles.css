@@ -24,7 +24,7 @@
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 32px;
   width: 100%;
   max-width: 1200px;

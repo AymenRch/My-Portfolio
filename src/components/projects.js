@@ -3,6 +3,7 @@ import ECOM from '../assets/ecom.png';
 import PORTFOLIO from '../assets/portfolio.png';
 import Delivyou from '../assets/Delivyou.png';
 import Keplox from '../assets/Keplox.png';
+import OBJET from '../assets/object.png';
 import './ProjectsStyles.css';
 import { FaGithub } from 'react-icons/fa'
 
@@ -29,13 +30,13 @@ const data = [
     },
     {
         id: 3,
-        name: 'Keplox',
-        description: 'Business Management Dashboard',
-        image: Keplox,
-        url: 'https://www.keplox.com/login',
-        tech: ['Laravel', 'MySQL'],
-        github: 'https://github.com/AymenRch',
-        myRole: 'Frontend Dev'
+        name: 'Object Detection',
+        description: 'Real-time Object Detection',
+        image: OBJET,
+        url: 'https://aymenrch.github.io/Object-Detector/',
+        tech: ['React', 'TensorFlow'],
+        github: 'https://github.com/AymenRch/Object-Detector',
+        myRole: 'Full-Stack Dev'
     },
     {
         id: 4,
@@ -47,7 +48,17 @@ const data = [
         github: 'https://github.com/AymenRch/My-Portfolio',
         myRole: 'Full-Stack Dev'
     },
-
+    {
+        id: 5,
+        name: 'Keplox',
+        description: 'Business Management Dashboard',
+        image: Keplox,
+        url: 'https://www.keplox.com/login',
+        tech: ['Laravel', 'MySQL'],
+        github: 'https://github.com/AymenRch',
+        myRole: 'Frontend Dev'
+    }
+    
 ];
 
 const Projects = () => {
