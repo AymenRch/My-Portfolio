@@ -4,6 +4,8 @@ import PORTFOLIO from '../assets/portfolio.png';
 import Delivyou from '../assets/Delivyou.png';
 import Keplox from '../assets/Keplox.png';
 import OBJET from '../assets/object.png';
+import Notio from '../assets/notio.png';
+import Forge from '../assets/forge.png';
 import './ProjectsStyles.css';
 import { FaGithub } from 'react-icons/fa'
 
@@ -38,7 +40,7 @@ const data = [
         github: 'https://github.com/AymenRch/Object-Detector',
         myRole: 'Full-Stack Dev'
     },
-    {
+    /*{
         id: 4,
         name: 'Portfolio',
         description: 'My Personal Portfolio',
@@ -57,8 +59,27 @@ const data = [
         tech: ['Laravel', 'MySQL'],
         github: 'https://github.com/AymenRch',
         myRole: 'Frontend Dev'
-    }
-    
+    }*/
+   {
+        id: 6,
+        name: 'Notio',
+        description: 'Notion Clone',
+        image: Notio,
+        url: 'https://notio-alpha.vercel.app/',
+        tech: ['React', 'Firebase'],
+        github: 'https://github.com/AymenRch/notio',
+        myRole: 'Full-Stack Dev'
+   },
+   {
+        id: 7,
+        name: 'PortfolioForge',
+        description: 'Portfolio Builder',
+        image: Forge,
+        url: 'https://saas-red-ten.vercel.app/',
+        tech: ['React', 'express js'],
+        github: 'https://github.com/AymenRch/saas',
+        myRole: 'Full-Stack Dev'
+   }
 ];
 
 const Projects = () => {
