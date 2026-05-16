@@ -15,7 +15,7 @@ const data = [
         name: 'ScentSpace',
         description: 'Modern E-Commerce Website',
         image: ECOM,
-        url: 'https://aymenrch.github.io/parfumes/',
+        url: 'https://parfumes-ten.vercel.app/',
         tech: ['React', 'Node.js', 'supabase'],
         github:'https://github.com/AymenRch/parfumes',
         myRole: 'Full-Stack Dev'
